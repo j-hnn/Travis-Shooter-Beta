@@ -1,3 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699636017
+::res://::1699636475
 icon.svg::CompressedTexture2D::6912894760787079011::1699636012::1699636020::1::::<><>::
+README.md::TextFile::-1::1699636083::0::1::::<><>::
+::res://assets/::1699636475
+::res://assets/audio/::1699636475
+explode.wav::AudioStreamWAV::4258225583347677439::1699636475::1699636475::1::::<><>::
+hit.wav::AudioStreamWAV::1884680475653488614::1699636475::1699636475::1::::<><>::
+laser.ogg::AudioStreamOggVorbis::6508382546555121367::1699636475::1699636475::1::::<><>::
+::res://assets/fonts/::1699636475
+Kenney Future.ttf::FontFile::2914507121340070613::1699636475::1699636475::1::::<><>::
+::res://assets/textures/::1699636475
+laserRed01.png::CompressedTexture2D::4084355476080212879::1699636475::1699636475::1::::<><>::
+playerShip1_blue.png::CompressedTexture2D::2921432470240163389::1699636475::1699636475::1::::<><>::
+powerupGreen_bolt.png::CompressedTexture2D::8423604736413028754::1699636475::1699636475::1::::<><>::
+purple.png::CompressedTexture2D::5438092114336628409::1699636475::1699636475::1::::<><>::
+spaceShips_001.png::CompressedTexture2D::195921216619890453::1699636475::1699636475::1::::<><>::
+spaceShips_004.png::CompressedTexture2D::1970370256580870058::1699636475::1699636475::1::::<><>::
+spaceShips_007.png::CompressedTexture2D::8691200008882216156::1699636475::1699636475::1::::<><>::
+star.png::CompressedTexture2D::7523497491081709784::1699636475::1699636475::1::::<><>::
+::res://scenes/::1699636373
+game.tscn::PackedScene::55053023440242522::1699636355::0::1::::<><>::res://scripts/game.gd
+player.tscn::PackedScene::3647159021606862467::1699636373::0::1::::<><>::
+::res://scripts/::1699636465
+game.gd::GDScript::-1::1699636354::0::1::::<>Node2D<>::
