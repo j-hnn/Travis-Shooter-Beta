@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://do6aclusjdy0i"]
+
+[ext_resource type="Texture2D" uid="uid://bygq0dc0q4u28" path="res://assets/textures/laserRed01.png" id="1_muy0r"]
+[ext_resource type="Script" path="res://scripts/laser.gd" id="1_xs53w"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n0s5t"]
+radius = 4.0
+height = 46.0
+
+[node name="Laser" type="Area2D"]
+script = ExtResource("1_xs53w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_muy0r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_n0s5t")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(0, 39.5)
+scale = Vector2(0.5, 0.25)
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

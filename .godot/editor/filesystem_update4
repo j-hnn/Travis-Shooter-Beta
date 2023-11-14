@@ -1,3 +1,5 @@
 res://scenes/game.tscn
 res://scripts/game.gd
 res://scenes/player.tscn
+res://scenes/laser.tscn
+res://scripts/player.gd
