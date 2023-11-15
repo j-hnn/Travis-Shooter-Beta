@@ -18,14 +18,17 @@ spaceShips_001.png::CompressedTexture2D::195921216619890453::1699636475::1699636
 spaceShips_004.png::CompressedTexture2D::1970370256580870058::1699636475::1699636475::1::::<><>::
 spaceShips_007.png::CompressedTexture2D::8691200008882216156::1699636475::1699636475::1::::<><>::
 star.png::CompressedTexture2D::7523497491081709784::1699636475::1699636475::1::::<><>::
-::res://scenes/::1699982070
-diver_enemy.tscn::PackedScene::2043852148454398409::1699982070::0::1::::<><>::uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://3cpyfbyh7kj7::::res://assets/textures/spaceShips_004.png
-enemy.tscn::PackedScene::206229092808237::1699982070::0::1::::<><>::uid://c1518wbja6dd::::res://assets/textures/spaceShips_001.png<>res://scripts/enemy.gd
-game.tscn::PackedScene::55053023440242522::1699982069::0::1::::<><>::res://scripts/game.gd<>uid://br7yf8yrrkedn::::res://scenes/player.tscn<>uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://4eb7f5mxqu5n::::res://scenes/diver_enemy.tscn
-laser.tscn::PackedScene::8205905753458370466::1699982070::0::1::::<><>::uid://bygq0dc0q4u28::::res://assets/textures/laserRed01.png<>res://scripts/laser.gd
-player.tscn::PackedScene::3647159021606862467::1699982069::0::1::::<><>::uid://bhvftiiome0m8::::res://assets/textures/playerShip1_blue.png<>res://scripts/player.gd
-::res://scripts/::1699982055
-enemy.gd::GDScript::-1::1699981958::0::1::::Enemy<>Area2D<>::
-game.gd::GDScript::-1::1699982055::0::1::::<>Node2D<>::
+::res://scenes/::1700066714
+diver_enemy.tscn::PackedScene::2043852148454398409::1700066549::0::1::::<><>::uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://3cpyfbyh7kj7::::res://assets/textures/spaceShips_004.png
+enemy.tscn::PackedScene::206229092808237::1700066549::0::1::::<><>::uid://c1518wbja6dd::::res://assets/textures/spaceShips_001.png<>res://scripts/enemy.gd
+game.tscn::PackedScene::55053023440242522::1700066592::0::1::::<><>::res://scripts/game.gd<>uid://br7yf8yrrkedn::::res://scenes/player.tscn<>uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://4eb7f5mxqu5n::::res://scenes/diver_enemy.tscn<>uid://bgkh3bhrlwtnk::::res://scenes/hud.tscn
+laser.tscn::PackedScene::8205905753458370466::1700065560::0::1::::<><>::uid://bygq0dc0q4u28::::res://assets/textures/laserRed01.png<>res://scripts/laser.gd
+player.tscn::PackedScene::3647159021606862467::1700066549::0::1::::<><>::uid://bhvftiiome0m8::::res://assets/textures/playerShip1_blue.png<>res://scripts/player.gd
+hud.tscn::PackedScene::2828672608365565520::1700066653::0::1::::<><>::uid://bhr2rhqo8dmnd::::res://assets/fonts/Kenney Future.ttf<>res://scripts/hud.gd
+game_over_s_creen.tscn::PackedScene::5004315682665663810::1700066743::0::1::::<><>::
+::res://scripts/::1700066592
+enemy.gd::GDScript::-1::1700066195::0::1::::Enemy<>Area2D<>::
+game.gd::GDScript::-1::1700066592::0::1::::<>Node2D<>::
 laser.gd::GDScript::-1::1699981893::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1699980713::0::1::::Player<>CharacterBody2D<>::
+player.gd::GDScript::-1::1700066001::0::1::::Player<>CharacterBody2D<>::
+hud.gd::GDScript::-1::1700066446::0::1::::<>Control<>::

@@ -1,6 +1,7 @@
 class_name Player extends CharacterBody2D
 
 signal laser_shot(laser_scene, location)
+signal killed
 
 @export var speed = 300
 @export var fire_rate = 0.25
@@ -31,5 +32,5 @@ func shoot():
 	laser_shot.emit(laser_scene, muzzle.global_position)
 
 func die():
-	print("player died")
+	killed.emit()
 	queue_free()
