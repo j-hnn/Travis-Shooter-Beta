@@ -1,13 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://1wyk3j7khy5"]
+[gd_scene load_steps=6 format=3 uid="uid://1wyk3j7khy5"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_8pdvd"]
 [ext_resource type="PackedScene" uid="uid://br7yf8yrrkedn" path="res://scenes/player.tscn" id="2_nk5i2"]
 [ext_resource type="PackedScene" uid="uid://dnqorplbjp" path="res://scenes/enemy.tscn" id="3_h58an"]
 [ext_resource type="PackedScene" uid="uid://4eb7f5mxqu5n" path="res://scenes/diver_enemy.tscn" id="4_dgcvc"]
+[ext_resource type="PackedScene" uid="uid://bgkh3bhrlwtnk" path="res://scenes/hud.tscn" id="4_xvikd"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_8pdvd")
 enemy_scenes = Array[PackedScene]([ExtResource("3_h58an"), ExtResource("4_dgcvc")])
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UILayer" instance=ExtResource("4_xvikd")]
 
 [node name="PlayerSpawnPos" type="Marker2D" parent="."]
 position = Vector2(270, 850)
