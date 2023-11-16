@@ -16,7 +16,6 @@ func _process(delta):
 	if Input.is_action_pressed("shoot"):
 		if !shoot_cd:
 			shoot_cd = true
-			print("laser fired")
 			shoot()
 			await get_tree().create_timer(fire_rate).timeout
 			shoot_cd = false

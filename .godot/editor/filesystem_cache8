@@ -1,15 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700065432
+::res://::1700154284
 icon.svg::CompressedTexture2D::6912894760787079011::1699636012::1699636020::1::::<><>::
 README.md::TextFile::-1::1699636083::0::1::::<><>::
 ::res://assets/::1699636475
-::res://assets/audio/::1699636475
+::res://assets/audio/::1700154868
 explode.wav::AudioStreamWAV::4258225583347677439::1699636475::1699636475::1::::<><>::
 hit.wav::AudioStreamWAV::1884680475653488614::1699636475::1699636475::1::::<><>::
 laser.ogg::AudioStreamOggVorbis::6508382546555121367::1699636475::1699636475::1::::<><>::
+the-beginning-of-sicko-mode-sound-effect-for-memes_xAcUeuI.mp3::AudioStreamMP3::5449517281282414474::1700154467::1700154467::1::::<><>::
+travisscott-eeer.mp3::AudioStreamMP3::7063907997382585365::1700154868::1700154868::1::::<><>::
+travisscott-yea.mp3::AudioStreamMP3::5492161120824088076::1700154633::1700154633::1::::<><>::
 ::res://assets/fonts/::1699636475
 Kenney Future.ttf::FontFile::2914507121340070613::1699636475::1699636475::1::::<><>::
-::res://assets/textures/::1699636475
+::res://assets/textures/::1700154284
+fry.png::CompressedTexture2D::7544475590143148182::1700154268::1700154284::1::::<><>::
 laserRed01.png::CompressedTexture2D::4084355476080212879::1699636475::1699636475::1::::<><>::
 playerShip1_blue.png::CompressedTexture2D::2921432470240163389::1699636475::1699636475::1::::<><>::
 powerupGreen_bolt.png::CompressedTexture2D::8423604736413028754::1699636475::1699636475::1::::<><>::
@@ -18,17 +22,19 @@ spaceShips_001.png::CompressedTexture2D::195921216619890453::1699636475::1699636
 spaceShips_004.png::CompressedTexture2D::1970370256580870058::1699636475::1699636475::1::::<><>::
 spaceShips_007.png::CompressedTexture2D::8691200008882216156::1699636475::1699636475::1::::<><>::
 star.png::CompressedTexture2D::7523497491081709784::1699636475::1699636475::1::::<><>::
-::res://scenes/::1700066714
-diver_enemy.tscn::PackedScene::2043852148454398409::1700066549::0::1::::<><>::uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://3cpyfbyh7kj7::::res://assets/textures/spaceShips_004.png
-enemy.tscn::PackedScene::206229092808237::1700066549::0::1::::<><>::uid://c1518wbja6dd::::res://assets/textures/spaceShips_001.png<>res://scripts/enemy.gd
-game.tscn::PackedScene::55053023440242522::1700066592::0::1::::<><>::res://scripts/game.gd<>uid://br7yf8yrrkedn::::res://scenes/player.tscn<>uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://4eb7f5mxqu5n::::res://scenes/diver_enemy.tscn<>uid://bgkh3bhrlwtnk::::res://scenes/hud.tscn
-laser.tscn::PackedScene::8205905753458370466::1700065560::0::1::::<><>::uid://bygq0dc0q4u28::::res://assets/textures/laserRed01.png<>res://scripts/laser.gd
-player.tscn::PackedScene::3647159021606862467::1700066549::0::1::::<><>::uid://bhvftiiome0m8::::res://assets/textures/playerShip1_blue.png<>res://scripts/player.gd
-hud.tscn::PackedScene::2828672608365565520::1700066653::0::1::::<><>::uid://bhr2rhqo8dmnd::::res://assets/fonts/Kenney Future.ttf<>res://scripts/hud.gd
-game_over_s_creen.tscn::PackedScene::5004315682665663810::1700066743::0::1::::<><>::
-::res://scripts/::1700066592
-enemy.gd::GDScript::-1::1700066195::0::1::::Enemy<>Area2D<>::
-game.gd::GDScript::-1::1700066592::0::1::::<>Node2D<>::
-laser.gd::GDScript::-1::1699981893::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1700066001::0::1::::Player<>CharacterBody2D<>::
+travis.png::CompressedTexture2D::8250148067046073845::1700153672::1700153683::1::::<><>::
+::res://scenes/::1700154810
+diver_enemy.tscn::PackedScene::2043852148454398409::1700154810::0::1::::<><>::uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://3cpyfbyh7kj7::::res://assets/textures/spaceShips_004.png
+enemy.tscn::PackedScene::206229092808237::1700154810::0::1::::<><>::uid://c1518wbja6dd::::res://assets/textures/spaceShips_001.png<>res://scripts/enemy.gd
+game.tscn::PackedScene::55053023440242522::1700154810::0::1::::<><>::res://scripts/game.gd<>uid://br7yf8yrrkedn::::res://scenes/player.tscn<>uid://dnqorplbjp::::res://scenes/enemy.tscn<>uid://4eb7f5mxqu5n::::res://scenes/diver_enemy.tscn<>uid://cjv10u8ex2ye1::::res://assets/audio/the-beginning-of-sicko-mode-sound-effect-for-memes_xAcUeuI.mp3<>uid://bgkh3bhrlwtnk::::res://scenes/hud.tscn<>uid://ckipddqkh6u5y::::res://assets/audio/travisscott-yea.mp3<>uid://cdkel3p3q8fv3::::res://scenes/game_over_screen.tscn<>uid://cjqit2q27aiur::::res://assets/textures/purple.png<>uid://b1wymalc4ru36::::res://assets/audio/explode.wav<>uid://dfgo50t0a2vci::::res://assets/textures/star.png
+game_over_screen.tscn::PackedScene::5004315682665663810::1700154810::0::1::::<><>::uid://bhr2rhqo8dmnd::::res://assets/fonts/Kenney Future.ttf<>res://scripts/game_over_screen.gd
+hud.tscn::PackedScene::2828672608365565520::1700154810::0::1::::<><>::uid://bhr2rhqo8dmnd::::res://assets/fonts/Kenney Future.ttf<>res://scripts/hud.gd
+laser.tscn::PackedScene::8205905753458370466::1700154810::0::1::::<><>::res://scripts/laser.gd<>uid://dfqun71p4f3j3::::res://assets/textures/fry.png
+player.tscn::PackedScene::3647159021606862467::1700154810::0::1::::<><>::res://scripts/player.gd<>uid://dpsoy6xytomg0::::res://assets/textures/travis.png
+::res://scripts/::1700153502
+enemy.gd::GDScript::-1::1700153213::0::1::::Enemy<>Area2D<>::
+game.gd::GDScript::-1::1700153502::0::1::::<>Node2D<>::
+game_over_screen.gd::GDScript::-1::1700067479::0::1::::<>Control<>::
 hud.gd::GDScript::-1::1700066446::0::1::::<>Control<>::
+laser.gd::GDScript::-1::1699981893::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1700152962::0::1::::Player<>CharacterBody2D<>::
