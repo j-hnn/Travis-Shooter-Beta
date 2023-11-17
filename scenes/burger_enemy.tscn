@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch52w7crywtyx"]
+
+[ext_resource type="PackedScene" uid="uid://dnqorplbjp" path="res://scenes/enemy.tscn" id="1_rty3v"]
+[ext_resource type="Texture2D" uid="uid://btrck0ves46up" path="res://assets/textures/burger.png" id="2_q80lb"]
+
+[node name="Enemy" instance=ExtResource("1_rty3v")]
+speed = 200
+hp = 10
+points = 500
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_q80lb")

@@ -1,14 +1,17 @@
 extends Node2D
 
 @export var enemy_scenes: Array[PackedScene] = []
+@export var power_up_scenes: Array[PackedScene] = []
 
 @onready var player_spawn_pos = $PlayerSpawnPos
 @onready var laser_container = $LaserContainer
 @onready var timer = $EnemySpawnTimer
+@onready var putimer = $PowerUpSpawnTimer
 @onready var enemy_container = $EnemyContainer
 @onready var hud = $UILayer/HUD
 @onready var gos = $UILayer/GameOverScreen
 @onready var pb = $ParallaxBackground
+@onready var puc = $PowerUpContainer
 
 @onready var laser_sound = $SFX/LaserSound
 @onready var hit_sound = $SFX/HitSound
@@ -30,7 +33,6 @@ func _ready():
 	else:
 		high_score = 0
 		save_game()
-		
 	
 	score = 0
 	player = get_tree().get_first_node_in_group("player")
@@ -51,14 +53,15 @@ func _process(delta):
 		get_tree().reload_current_scene()
 		print("reloaded scene")
 		
-	if timer.wait_time > 0.5:
-		timer.wait_time -= delta * 0.01
-	elif timer.wait_time < 0.5:
-		timer.wait_time = 0.5
+	if timer.wait_time > 0.1:
+		timer.wait_time -= delta * 0.05
+	elif timer.wait_time < 0.1:
+		timer.wait_time = 0.1
 		
 	pb.scroll_offset.y += delta * scroll_speed
 	if pb.scroll_offset.y >= 960:
 		pb.scroll_offset.y = 0
+
 
 func _on_player_laser_shot(laser_scene, location): 
 	var laser = laser_scene.instantiate()
@@ -72,7 +75,7 @@ func _on_enemy_spawn_timer_timeout():
 	enemy.killed.connect(_on_enemy_killed)
 	enemy.hit.connect(_on_enemy_hit)
 	enemy_container.add_child(enemy)
-	
+
 func _on_enemy_killed(points):
 	hit_sound.play()
 	score += points
@@ -89,3 +92,9 @@ func _on_player_killed():
 	save_game()
 	await get_tree().create_timer(1.5).timeout
 	gos.visible = true
+
+
+func _on_power_up_spawn_timer_timeout():
+	var powerups = power_up_scenes.pick_random().instantiate()
+	powerups.global_position = Vector2(randf_range(50, 500), 0)
+	puc.add_child(powerups)

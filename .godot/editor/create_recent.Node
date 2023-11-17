@@ -1,9 +1,14 @@
-CollisionPolygon2D
-CollisionShape2D
 AudioStreamPlayer2D
+Timer
+Node2D
+VisibleOnScreenEnabler2D
+VisibleOnScreenNotifier2D
+CollisionShape2D
+Sprite2D
+Area2D
+CollisionPolygon2D
 Node
 GPUParticles2D
-Sprite2D
 ParallaxLayer
 ParallaxBackground
 Button
@@ -12,9 +17,5 @@ Panel
 ColorRect
 Control
 CanvasLayer
-Timer
-Node2D
-VisibleOnScreenEnabler2D
-Area2D
 Marker2D
 CharacterBody2D

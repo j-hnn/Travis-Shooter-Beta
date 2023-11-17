@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://br7yf8yrrkedn"]
+[gd_scene load_steps=4 format=3 uid="uid://br7yf8yrrkedn"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_tbutw"]
 [ext_resource type="Texture2D" uid="uid://dpsoy6xytomg0" path="res://assets/textures/travis.png" id="2_lbxvl"]
+[ext_resource type="AudioStream" uid="uid://cv20usr4d2153" path="res://assets/audio/letsgo.mp3" id="3_6qc34"]
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 2
@@ -16,3 +17,6 @@ position = Vector2(0, -77)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-2, -68, 5, -68, 11, -58, 12, -55, 7, -54, 7, -47, 13, -43, 18, -42, 21, -30, 25, -17, 25, 7, 22, 10, 18, 9, 15, 10, 14, 28, 13, 43, 13, 49, 12, 53, 13, 60, 14, 62, 11, 67, 7, 67, -11, 67, -15, 66, -24, 64, -25, 61, -19, 58, -17, 54, -17, 41, -17, 33, -17, 26, -16, 18, -15, 9, -21, 9, -24, 8, -25, 4, -24, 1, -24, -11, -24, -16, -22, -22, -20, -26, -19, -31, -18, -38, -14, -43, -11, -43, -5, -46, -3, -49, -4, -52, -8, -52, -7, -58, -5, -63)
+
+[node name="PowerUp" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_6qc34")

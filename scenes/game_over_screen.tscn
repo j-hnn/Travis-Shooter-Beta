@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/game_over_screen.gd" id="1_m2p7a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qfm2g"]
-bg_color = Color(0.207843, 0.654902, 0.815686, 1)
+bg_color = Color(0.701961, 0.584314, 0.352941, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25

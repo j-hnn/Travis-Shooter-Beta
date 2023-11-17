@@ -5,6 +5,10 @@ res://scenes/enemy.tscn
 res://scenes/diver_enemy.tscn
 res://scenes/hud.tscn
 res://scenes/game_over_screen.tscn
-res://scripts/player.gd
-res://scripts/enemy.gd
 res://scenes/laser.tscn
+res://scenes/burger_enemy.tscn
+res://scenes/fire_rate_power_up.tscn
+res://scripts/game_over_screen.gd
+res://README.md
+res://scripts/fire_rate_power_up.gd
+res://scripts/player.gd

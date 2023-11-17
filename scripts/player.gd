@@ -33,3 +33,6 @@ func shoot():
 func die():
 	killed.emit()
 	queue_free()
+
+func play_powerup():
+	$PowerUp.play()
